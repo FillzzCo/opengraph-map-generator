@@ -1,0 +1,53 @@
+{
+	"name": "opengraph-map-generator",
+	"module": "index.ts",
+	"version": "1.0.0",
+	"type": "module",
+	"author": {
+		"name": "Thomas ROUX",
+		"email": "thomas.roux@fillzz.com",
+		"url": "https://fillzz.com"
+	},
+	"license": "MIT",
+	"description": "A Cloudflare Worker that generates Open Graph images for maps using Vercel's OG Image Generation API.",
+	"keywords": [
+		"cloudflare",
+		"worker",
+		"vercel",
+		"og-image",
+		"map",
+		"mapbox",
+		"open-graph",
+		"image-generation"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FillzzCo/opengraph-map-generator.git"
+	},
+	"bugs": {
+		"url": "https://github.com/FillzzCo/opengraph-map-generator/issues"
+	},
+	"scripts": {
+		"dev": "wrangler dev src/index.ts",
+		"deploy": "wrangler deploy --minify src/index.ts",
+		"test": "bun test --coverage",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@cloudflare/pages-plugin-vercel-og": "^0.1.2",
+		"@resvg/resvg-wasm": "^2.6.2",
+		"autoprefixer": "^10.4.21",
+		"hono": "^4.7.11",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250606.0",
+		"wrangler": "^4.19.1",
+		"@types/bun": "latest",
+		"@types/react": "^19.1.6",
+		"@types/react-dom": "^19.1.6",
+		"@vercel/og": "^1.0.0",
+		"prettier": "^3.5.3"
+	}
+}

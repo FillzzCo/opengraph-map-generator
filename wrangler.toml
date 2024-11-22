@@ -1,0 +1,11 @@
+name = "pois-og-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-06"
+compatibility_flags = [ "nodejs_compat_v2" ]
+assets = { directory = "public",  binding = "ASSETS" }
+minify = true
+[build]
+watch_dir = "public"
+
+[vars]
+MAPBOX_TOKEN="your_mapbox_token_here"
