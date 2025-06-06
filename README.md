@@ -9,6 +9,9 @@ This project provides a community-driven API to generate social media preview im
 - Built-in caching of fonts and remote images
 - Written in **TypeScript** with unit tests
 
+# Example Usage
+![Example Map Image](./demo.png)
+
 ## Getting Started
 
 ```bash
