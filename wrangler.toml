@@ -1,11 +1,18 @@
-name = "pois-og-api"
+name = "opengraph-map-generator"
 main = "src/index.ts"
-compatibility_date = "2024-11-06"
-compatibility_flags = [ "nodejs_compat_v2" ]
-assets = { directory = "public",  binding = "ASSETS" }
+compatibility_date = "2025-06-06"
+compatibility_flags = ["nodejs_compat_v2"]
+assets = { directory = "public", binding = "ASSETS" }
 minify = true
+
 [build]
 watch_dir = "public"
 
+[observability.logs]
+enabled = true
+
 [vars]
+MAPBOX_TOKEN="your_mapbox_token_here"
+
+[env.production.vars]
 MAPBOX_TOKEN="your_mapbox_token_here"

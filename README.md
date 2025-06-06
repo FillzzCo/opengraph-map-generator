@@ -19,15 +19,11 @@ bun run deploy # deploy to Cloudflare
 
 ### Configuration
 
-1. Copy `.env.example` to `.env` and set your Mapbox token:
-   ```bash
-   cp .env.example .env
-   echo "MAPBOX_TOKEN=your_token" >> .env
+1. Set `MAPBOX_TOKEN` in `wrangler.toml`:
+   ```toml
+   [env.production.vars]
+   MAPBOX_TOKEN = "your_mapbox_token_here"
    ```
-2. `MAPBOX_TOKEN` is required to fetch map tiles.
-
-The root path `/` serves a small HTML page with this documentation and includes
-a `favicon.ico` for browsers.
 
 ## Map Endpoint
 
