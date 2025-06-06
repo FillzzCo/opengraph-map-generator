@@ -60,7 +60,7 @@ export default app.on('GET', '/map', async (c) => {
 
 		const fillzzLogo = await loadImage(c, FILLZZ_LOGO);
 		const providerLogoUrl = params.provider
-			? `https://data.fillzz.cloud/provider/${params.provider.replace('_', '-')}/logo.png`
+			? `https://example.com/provider/${params.provider.replace('_', '-')}/logo.png`
 			: undefined;
 		const providerLogo = providerLogoUrl ? await loadImage(c, providerLogoUrl) : null;
 

@@ -17,7 +17,7 @@ export interface MapParams {
  */
 export function parseMapParams(url: string): MapParams {
 	const p = new URL(url).searchParams;
-	const stationName = p.get('name') || 'Fillzz.com';
+	const stationName = p.get('name') || 'Your brand here';
 	const city = p.get('city') ?? '';
 	const provider = p.get('provider') ?? undefined;
 
